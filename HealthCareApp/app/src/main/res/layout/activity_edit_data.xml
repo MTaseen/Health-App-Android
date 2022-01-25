@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditDataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/coverIv"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:background="#F98E1D">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Edit Data"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="@null"/>
+
+        <EditText
+            android:id="@+id/titleEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_box"
+            android:drawableStart="@drawable/ic_title_grey"
+            android:hint="Title"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName|textCapWords"
+            android:layout_below="@+id/coverIv"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/descriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_box"
+            android:hint="Description"
+            android:drawablePadding="10dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_below="@+id/titleEt"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/ageCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_box"
+            android:hint="Age Category"
+            android:drawableEnd="@drawable/ic_drop_down_arrow"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_below="@+id/descriptionEt"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/ethnicityCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_box"
+            android:hint="Ethnicity Category"
+            android:drawableEnd="@drawable/ic_drop_down_arrow"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_below="@+id/ageCategory"
+            android:padding="12dp"/>
+
+        <TextView
+            android:id="@+id/sexCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_box"
+            android:hint="Sex Category"
+            android:drawableEnd="@drawable/ic_drop_down_arrow"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_below="@+id/ethnicityCategory"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/illnessSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sexCategory"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_box"
+            android:padding="12dp"
+            android:hint="Illness Summary"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/symptomsEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/illnessSummary"
+            android:background="@drawable/edit_text_box"
+            android:layout_margin="10dp"
+            android:padding="12dp"
+            android:hint="Add Symptoms"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/treatmentEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symptomsEt"
+            android:background="@drawable/edit_text_box"
+            android:layout_margin="10dp"
+            android:padding="12dp"
+            android:hint="Add Prevention Methods"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/updateDataBtn"
+            android:text="Update Data"
+            android:layout_below="@+id/treatmentEt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#F98E1D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="90dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ViewDataUserActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/coverIv"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:scaleType="fitXY"
+            android:background="#F98E1D">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Illness Detail"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <!--Back button-->
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/illnessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coverIv"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Illness Name"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/illnessDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symptoms"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Illness Detail"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/susceptible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/illnessName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:text="People in these categories are most likely to get it:"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/categoryAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/susceptible"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Age"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/categoryEthnicity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categoryAge"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Ethnicity"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/categorySex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categoryEthnicity"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Sex"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categorySex"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="Symptoms"
+            android:textSize="20dp"
+            android:textColor="@color/colorRed" />
+
+        <TextView
+            android:id="@+id/treatments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/illnessDetail"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="Treatments"
+            android:textSize="20dp"
+            android:textColor="@color/colorRed" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

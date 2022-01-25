@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.IllnessSearchActivity">
+
+    <ImageView
+        android:id="@+id/coverIv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:background="#F98E1D">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/searchTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Search"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_logout"
+        android:layout_marginLeft="365dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"/>
+
+    <!--SearchView-->
+    <EditText
+        android:id="@+id/searchIllnessEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_box"
+        android:layout_below="@id/coverIv"
+        android:drawableStart="@drawable/ic_search_black"
+        android:layout_toStartOf="@+id/filterIllnessBtn"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:hint="Search"/>
+
+    <!--filter-->
+    <ImageButton
+        android:id="@+id/filterIllnessBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_filter_grey"
+        android:layout_below="@+id/coverIv"/>
+
+    <!--show filtered category name-->
+    <TextView
+        android:id="@+id/filteredIllnessTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchIllnessEt"
+        android:textColor="@color/colorBlack"
+        android:text="Showing: All"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <!--RecyclerView: show products-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/illnessRv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filteredIllnessTv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_illness_data_admin"/>
+
+</RelativeLayout>
